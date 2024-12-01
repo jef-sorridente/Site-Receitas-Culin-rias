@@ -1,0 +1,4 @@
+Hospedagem realizada na Vercel via Conexão do GitHub:
+
+Link GitHub - https://github.com/jef-sorridente/mestre-cuca
+Link Hospedagem - https://mestre-cuca-beta.vercel.app/
