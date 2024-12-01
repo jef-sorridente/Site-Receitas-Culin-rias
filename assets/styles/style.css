@@ -1,0 +1,196 @@
+/* Global */
+* {
+  font-family: "Parkinsans", serif;
+}
+
+:root {
+  --primary-color: #121212;
+  --secondary-color: #fdf3d8;
+  --white: #fff;
+  --hover: #3c3c3c;
+}
+
+/* Header */
+.navbar {
+  background-color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color);
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+.navbar-toggler {
+  background-color: var(--secondary-color);
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.banner-image {
+  width: 350px;
+}
+
+.banner-text {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Sobre */
+.sobre {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* receitas */
+.receitas {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav .nav-link {
+  color: var(--primary-color);
+}
+
+.nav .nav-link.active {
+  background-color: var(--primary-color);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--hover);
+}
+
+.container-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  width: calc(33.3% - 10.9px);
+  margin-bottom: 16px;
+}
+
+/* Duvidas */
+
+.duvidas {
+  background-color: var(--primary-color);
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed),
+.accordion-collapse {
+  background-color: var(--white);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* footer */
+.footer {
+  background-color: var(--secondary-color);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav-footer .nav-link {
+  color: var(--primary-color);
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--hover);
+  color: var(--white);
+  border: 2px solid var(--white);
+  padding: 16px;
+  border-radius: 16px;
+  min-width: 250px;
+}
+
+.perfil img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+}
+
+.social-link {
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-links a {
+  color: var(--white);
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 8px);
+  }
+
+  .container-tab {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .container-tab .nav {
+    width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .card {
+    width: 100%;
+  }
+}
